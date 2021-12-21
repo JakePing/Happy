@@ -18,6 +18,8 @@
 
   body {
     margin: 0;
+    height: 580px;
+    width: 1280px;
   }
 
 
@@ -47,35 +49,26 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(https://www.fonstola.ru/download.php?file=201304/2560x1600/fonstola.ru-92149.jpg);
+    background-image: url(https://img3.goodfon.ru/original/2880x1800/e/4f/elka-elochnye-igrushki-bant-busy.jpg);
+    background-size: cover;
     display: block;
     z-index: 2;
-    height: 1000px;
-    width: 1420px;
+    height: 580px;
+    width: 1280px;
   }
 
   .modalDialog>div {
     height: 450px;
     width: 700px;
     position: relative;
-    margin: 10% 25%;
+    margin-top: 60px;
+    margin-left: 245px;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    /*     background: #fff;
-    background: -moz-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178));
-    background: -webkit-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178));
-    background: -o-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178)); */
-    background-image: url(https://www.anypics.ru/download.php?file=201212/1600x1200/anypics.ru-56322.jpg);
+    background-image: url(https://www.tapeciarnia.pl/tapety/normalne/tapeta-bombki-z-kokardkami.jpg);
     background-size: cover;
   }
 
-  /* 
-  .password {
-    margin-left: 40px;
-    font-size: 40px;
-    color: rgb(27, 24, 24);
-  }
- */
   .password_btn {
     font-size: 18px;
     padding: 20px 20px;
@@ -83,6 +76,7 @@
     border: solid 2px rgb(255, 0, 0);
     color: rgb(27, 24, 24);
     margin-left: 80px;
+    transition: color, background-color 0.5s;
   }
 
   .password_btn:nth-child(2n) {
@@ -90,14 +84,27 @@
     cursor: pointer;
   }
 
+  .password_btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* https://w-dog.ru/wallpapers/8/11/344802719365758/sobaka-kolpak-podarki-fonar-shariki-pled.jpg */
   .main {
     position: relative;
     color: #fff;
     font-size: 20px;
-    background-image: url(https://w-dog.ru/wallpapers/8/11/344802719365758/sobaka-kolpak-podarki-fonar-shariki-pled.jpg);
-    background-size: cover;
-    height: 900px;
-    width: 1420px;
+    background-image: url(https://avatars.mds.yandex.net/get-images-cbir/2203411/8Q5mNOBKA9uBnb4povr4xw5255/ocr);
+    background-size: contain;
+    min-height: 506px;
+    min-width: 1280px;
+  }
+
+  .main_p {
+    padding-top: 70px;
+    padding-left: 30px;
+    font-size: 40px;
+    color: #fff;
   }
 
   .close {
@@ -112,7 +119,7 @@
 <script type="text/javascript">
   function my_proverka() {
     var code = document.getElementById("my_pass").value;
-    var pass = "0000";
+    var pass = "";
     if (code == pass) {
       var win = document.getElementById("openModal");
       win.classList.add("close");
@@ -127,17 +134,19 @@
 
       <div class="head">
         <h1 class="head_desc">С НОВЫМ ГОДОМ!</h1>
-        <p class="head_desc-p">Это игра в которой нужно дойти до самого главного приза, решив задачки и искать
-          подсказки. Первая задача, Разблокируй сайт для продолжение
-          "Первая подсказка находится в том, кто привлекает наc не внешне, а холодным внутренним миром."
+        <p class="head_desc-p">Это игра в которой нужно дойти до самого главного приза, решить задачки и искать
+          подсказки<br> Первая задача, Разблокируй сайт для продолжение.<br>
+          "Подсказка находится в том, кто привлекает наc не внешне, а холодным внутренним миром."
         </p>
         <input class="password_btn" type="password" id="my_pass" placeholder="Введите пароль сюда">
         <input class="password_btn" type="submit" onclick="my_proverka();" value="Войти">
       </div>
     </div>
-    <div class="main">
-      <p>Вы 1000 клиент!</p>
-    </div>
+    <article class="main_p main">
+      <h2>Поздравляем вы 10000 пользователь нашего сайта!<br> Вы получаете подарок, он отправлен вам
+        почтой.
+      </h2>
+    </article>
 
   </div>
 </body>
