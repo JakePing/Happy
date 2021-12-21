@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<!-- style -->
+
+<style type="text/css">
+  html {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  main {
+    height: 700px;
+    z-index: 1;
+    font-size: 20px;
+  }
+
+  .head {
+    position: absolute;
+    z-index: 12;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+  .modalDialog {
+    position: absolute;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    display: block;
+    z-index: 2;
+  }
+
+  .modalDialog>div {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    /*     background: #fff;
+    background: -moz-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178));
+    background: -webkit-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178));
+    background: -o-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178)); */
+    background-image: url('https://ya.cc/t/yes40uwO388zbA');
+    background-size: cover;
+  }
+
+
+  .password {
+    margin-left: 30px;
+    font-size: 40px;
+    color: black;
+  }
+
+  .password_btn {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: solid 1px #fff;
+    color: rgb(41, 46, 1);
+
+  }
+
+  .password_btn:nth-child(3) {
+    cursor: pointer;
+  }
+
+  .main {
+    position: relative;
+    color: black;
+    font-size: 16px;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .footer {
+    min-height: 300px;
+  }
+</style>
+<!-- script -->
+<script type="text/javascript">
+  function my_proverka() {
+    var code = document.getElementById("my_pass").value;
+    var pass = "0000";
+    if (code == pass) {
+      var win = document.getElementById("openModal");
+      win.classList.add("close");
+    }
+  } 
+</script>
+
+
+<body>
+
+  <footer class="footer">
+    <div id="openModal" class="modalDialog">
+
+      <div>
+        <h1 class="head_desc">С НОВЫМ ГОДОМ!</h1>
+        <p class="head_desc-p"> Разблокируй сайт для продолжение
+          "Первая подсказка находится в том, кто привлекает наc не внешне, а холодным внутренним миром."
+        </p>
+        <input class="password_btn" type="password" id="my_pass" placeholder="Введите пароль сюда">
+        <input class="password_btn" type="submit" onclick="my_proverka();" value="Войти">
+      </div>
+    </div>
+    <div class="main">
+      <p>Вы 1000 клиент!</p>
+    </div>
+
+  </footer>
+</body>
+
+</html>
