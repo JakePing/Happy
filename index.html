@@ -16,12 +16,10 @@
     margin: 0;
   }
 
-
-  main {
-    height: 700px;
-    z-index: 1;
-    font-size: 20px;
+  body {
+    margin: 0;
   }
+
 
   .head {
     position: absolute;
@@ -29,67 +27,77 @@
     color: #fff;
   }
 
+  .head_desc {
+    color: #fff;
+    font-size: 60px;
+    margin-left: 60px;
+  }
 
-
-
-
-
+  .head_desc-p {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 25px;
+  }
 
 
   .modalDialog {
     position: absolute;
-    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: black;
+    background-image: url(https://www.fonstola.ru/download.php?file=201304/2560x1600/fonstola.ru-92149.jpg);
     display: block;
     z-index: 2;
+    height: 1000px;
+    width: 1420px;
   }
 
   .modalDialog>div {
-    width: 1000px;
-    height: 1000px;
+    height: 450px;
+    width: 700px;
     position: relative;
-    margin: 10% auto;
+    margin: 10% 25%;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     /*     background: #fff;
     background: -moz-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178));
     background: -webkit-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178));
     background: -o-linear-gradient(rgb(242, 255, 234), rgb(211, 252, 178)); */
-    background-image: url('https://ya.cc/t/yes40uwO388zbA');
+    background-image: url(https://www.anypics.ru/download.php?file=201212/1600x1200/anypics.ru-56322.jpg);
     background-size: cover;
   }
 
-
+  /* 
   .password {
-    margin-left: 30px;
+    margin-left: 40px;
     font-size: 40px;
-    color: black;
+    color: rgb(27, 24, 24);
   }
-
+ */
   .password_btn {
     font-size: 18px;
-    margin-left: 10px;
-    margin-bottom: 20px;
     padding: 20px 20px;
     border-radius: 10px;
-    border: solid 1px #fff;
-    color: rgb(41, 46, 1);
-
+    border: solid 2px rgb(255, 0, 0);
+    color: rgb(27, 24, 24);
+    margin-left: 80px;
   }
 
-  .password_btn:nth-child(3) {
+  .password_btn:nth-child(2n) {
+    padding: 20px 50px;
     cursor: pointer;
   }
 
   .main {
     position: relative;
-    color: black;
-    font-size: 16px;
+    color: #fff;
+    font-size: 20px;
+    background-image: url(https://w-dog.ru/wallpapers/8/11/344802719365758/sobaka-kolpak-podarki-fonar-shariki-pled.jpg);
+    background-size: cover;
+    height: 900px;
+    width: 1420px;
   }
 
   .close {
@@ -114,13 +122,13 @@
 
 
 <body>
-
-  <footer class="footer">
+  <div class="footer">
     <div id="openModal" class="modalDialog">
 
-      <div>
+      <div class="head">
         <h1 class="head_desc">С НОВЫМ ГОДОМ!</h1>
-        <p class="head_desc-p"> Разблокируй сайт для продолжение
+        <p class="head_desc-p">Это игра в которой нужно дойти до самого главного приза, решив задачки и искать
+          подсказки. Первая задача, Разблокируй сайт для продолжение
           "Первая подсказка находится в том, кто привлекает наc не внешне, а холодным внутренним миром."
         </p>
         <input class="password_btn" type="password" id="my_pass" placeholder="Введите пароль сюда">
@@ -131,7 +139,7 @@
       <p>Вы 1000 клиент!</p>
     </div>
 
-  </footer>
+  </div>
 </body>
 
 </html>
